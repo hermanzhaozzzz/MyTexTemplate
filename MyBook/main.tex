@@ -1,0 +1,65 @@
+\documentclass[cn,11pt,chinese]{elegantbook}
+
+\title{生物信息学}
+\subtitle{使用Python与R进行生物信息学分析}
+
+\author{赵华男}
+%\institute{}
+%\date{2020-05-01}
+%\version{1}
+%\bioinfo{自定义}{信息}
+
+\extrainfo{生物信息学保姆级教程}
+
+\logo{logo-blue.png}
+\cover{cover.jpg}
+
+% 本文档命令
+\usepackage{array}
+\newcommand{\ccr}[1]{\makecell{{\color{#1}\rule{1cm}{1cm}}}}
+
+\begin{document}
+
+\maketitle
+\frontmatter
+
+% author, introduction
+\include{contents/about}
+
+% 目录
+\tableofcontents
+
+% 正文
+\mainmatter
+% 第一章 引言
+\include{contents/引言}
+
+% 第二章 Linux基础与编程知识的学习
+\include{contents/Coding}
+%测序原理
+%常见标准文件格式
+%质量控制
+%常用mapping软件及其核心算法
+%两大神器——从现在开始让分析流程化
+
+% 通过Snakemake与Jupyter进行生物信息学分析——实践出真知
+\include{contents/Workflows}
+
+% 机器学习在生物信息学中的应用
+\include{contents/MachineLearning}
+
+
+%核心算法的理解
+%统计知识
+%重复几篇顶级论文的核心结论
+%杂七杂八的笔记
+\include{contents/Kaggle}
+
+%\nocite{*} 
+\bibliography{bib/reference,bib/library,bib/papers}
+\appendix
+\include{contents/appendix01}
+
+
+
+\end{document}
